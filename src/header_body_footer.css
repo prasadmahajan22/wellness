@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* ************************************************************ Header Starts Here *********************************************************** */
+header{
+    width: 100%;
+}
+
+header .heading{
+    padding: 1rem 1rem 1.5rem;
+}
+
+header .heading h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgba(117, 11, 11, 0.766);
+    margin-bottom: 0.8rem;
+}
+
+header .heading p{
+    font-size: 1.2rem;
+    letter-spacing: 0.07rem;
+    color: rgba(117, 11, 11, 0.766);
+}
+
+
+header nav {
+    background-color: gray;
+}
+
+header nav .main-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .main-screen a{
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 4rem;
+    font-weight: 900;
+    transition: all 0.5s linear;
+}
+
+header nav .main-screen a:hover{
+    background-color: rgba(117, 11, 11, 0.766);
+}
+
+header nav .main-screen .home{
+    background-color: rgba(117, 11, 11, 0.766);
+}
+
+header nav .small-Screen #bar {
+    font-size: 2rem;
+    padding-right: 0.5rem; 
+    cursor: pointer;
+}
+
+header nav .small-Screen{
+    display: none;
+    position: relative;
+}
+
+header nav .small-Screen .submenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    text-align: center;
+    display: none;
+    z-index: 99999999999999;
+}
+
+header nav .small-Screen .submenu a{
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 4rem;
+    font-weight: 900;
+    transition: all 0.5s linear;
+    background-color: gray;
+    border-bottom: 1px solid white;
+}
+
+header nav .small-Screen .submenu a:hover{
+    background-color: rgba(117, 11, 11, 0.766);
+}
+
+
+@media (max-width : 992px) {
+    header nav .main-screen a{
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width : 600px) {
+    header nav .main-screen a{
+       display: none;
+    }
+
+    header nav .small-Screen{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    
+}
+
+/**********************************************************************Header Ends Here ********************************************************/
+
+/********************************************************************Body Starts Here***********************************************************/
+
+.thumbs-wrapper {
+    display: none;
+}
+
+.carousel .slide img{
+   height: 35.29rem;
+}
+
+.contact-section {
+    margin-top: 2rem !important; 
+    background-color: rgba(117, 11, 11, 0.766) !important;
+    color: white !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.contact-section .content {
+    text-align: center;
+    width: 70%;
+}
+
+.contact-section .content h1{
+    margin-top: 2.8rem;
+    font-size: 4rem;
+}
+
+.contact-section .content p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.7rem; 
+}
+
+.contact-section .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section .buttons button{
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.contact-section .buttons button:hover{
+    background-color: #fff;
+    color: rgba(117, 11, 11, 0.766);
+}
+
+.description{
+    margin-top: 2.5rem;
+    
+}
+
+.description .text {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.description .text p{
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+.description .text hr{
+    margin-top: 2.8rem;
+}
+
+.description .text .head{
+    color: rgba(117, 11, 11, 0.766);
+    font-size: 1.3rem;
+}
+
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.address h1{
+    color: rgba(129, 7, 7, 0.925);
+    margin-bottom: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.address p{
+    color: rgba(129, 7, 7, 0.925);
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+}
+
+/********************************************************************Body Ends Here*************************************************************/
+
+
+/********************************************************************Footer Starts Here*********************************************************/
+
+
+footer{
+    margin-top: 2.8rem; 
+}
+
+footer .copyright{
+    background-color: rgba(128, 128, 128, 0.738);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+/********************************************************************Footer Ends Here***********************************************************/
